@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul li {
+    text-emphasis: none;
+}
+
+
+/* 第一部分导航栏 */
+
+.nav {
+    width: 100%;
+    /* height: 95px; */
+}
+
+.nav-1 {
+    width: 1200px;
+    height: 95px;
+    margin: 30px auto;
+    display: flex;
+    /* background-color: #223355; */
+}
+
+
+/* 中间导航 */
+
+.nav-middle {
+    height: 95px;
+}
+
+.nav-middle ul li a {
+    color: #858585;
+    font-size: 16px;
+}
