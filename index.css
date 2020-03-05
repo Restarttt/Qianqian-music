@@ -1,14 +1,76 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 li {
     list-style: none;
 }
 
-ul li {
-    text-emphasis: none;
+a {
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+}
+
+
+/* .iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+
+/* 左边固定盒子 */
+
+.quickmark {
+    width: 156px;
+    height: 166px;
+    background-color: #f7f7f7;
+    position: fixed;
+    margin: 0 auto;
+    top: 139px;
+    left: 12px;
+    z-index: 2;
+}
+
+.quickmark-1 {
+    width: 156px;
+    height: 134px;
+    /* margin: 0 auto; */
+    margin-top: 18px;
+    display: inline-block;
+    text-align: center;
+}
+
+.quickmark-1 p {
+    color: #333;
+    font-size: 12px;
+}
+
+.quickmark-1 p:last-child {
+    color: #E13228;
+}
+
+
+/* 右边盒子固定 */
+
+.upward {
+    top: 1px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 1px;
+    top: 227px;
+}
+
+.upward img {
+    margin: 15px 0;
 }
 
 
@@ -22,8 +84,10 @@ ul li {
 .nav-1 {
     width: 1200px;
     height: 95px;
-    margin: 30px auto;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* background-color: #223355; */
 }
 
@@ -31,10 +95,615 @@ ul li {
 /* 中间导航 */
 
 .nav-middle {
+    display: inline-block;
     height: 95px;
+    line-height: 95px;
+    margin-left: 40px;
+}
+
+.nav-middle ul {
+    display: flex;
+    /* align-items: center; */
+}
+
+.nav-middle ul li {
+    padding: 0 20px;
 }
 
 .nav-middle ul li a {
     color: #858585;
     font-size: 16px;
+}
+
+.nav-middle li.nav-middle-1 a {
+    color: #000;
+}
+
+.nav-middle ul li a:hover {
+    color: #000;
+}
+
+
+/* 搜索框 */
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 295px;
+    height: 34px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    color: #858585;
+    padding: 0 10px 0 15px;
+    outline: none;
+}
+
+.search .icon-search {
+    color: #E13228;
+    position: absolute;
+    right: 13px;
+    top: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* .search-icon {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.search-icon:before {
+    content: "/E617";
+} */
+
+
+/* 下拉框 */
+
+.search-down {
+    display: none;
+    position: absolute;
+    width: 295px;
+    height: 500px;
+    background-color: #fff;
+    z-index: 3;
+    border: 1px solid #e8e8e8;
+}
+
+.search:hover .search-down {
+    display: block;
+}
+
+.search-down-1 {
+    display: flex;
+    margin: 15px 0 0 10px;
+}
+
+
+/* 歌曲 */
+
+.search-down-1 span {
+    color: #afafaf;
+    font-size: 13px;
+}
+
+.drop-down {
+    margin-left: 25px;
+}
+
+.drop-down ul li {
+    padding: 0 0 15px 0;
+}
+
+.drop-down ul li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.drop-down ul li p {
+    color: #afafaf;
+    font-size: 13px;
+}
+
+
+/* 歌手 */
+
+
+/* 专辑 */
+
+
+/* 个人信息 */
+
+.personal {
+    width: 118x;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.personal {
+    position: relative;
+}
+
+.personal-1 img:first-child {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.personal-1 img:last-child {
+    position: absolute;
+    left: 31px;
+    top: 26px;
+}
+
+.personal span {
+    color: #333;
+    font-size: 14px;
+    line-height: 41px;
+}
+
+
+/* 第二部份 topnav顶导航栏 */
+
+.topnav {
+    width: 100%;
+    height: 37.6px;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+
+.topnav-1 {
+    width: 750px;
+    height: 37.6px;
+    margin: 0 auto;
+    line-height: 37.6px;
+}
+
+.topnav ul {
+    display: flex;
+}
+
+.topnav-1 ul li {
+    padding: 0 35px;
+}
+
+.topnav-1 ul li a {
+    color: #333;
+    font-size: 16px;
+}
+
+.topnav-1 .topnav-2 a {
+    color: #E13228;
+    font-size: 16px;
+}
+
+.topnav-1 ul li a:hover {
+    color: #E13228;
+}
+
+
+/* 第三部分内容 */
+
+.main {
+    width: 100%;
+    height: 2858px;
+    margin-top: 30px;
+}
+
+.main-1 {
+    width: 1200px;
+    height: 2858px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/* 热门歌单 */
+
+.song-list {
+    width: 1200px;
+    height: 547px;
+    display: flex;
+}
+
+.song-list-left {
+    width: 790px;
+    height: 565px;
+}
+
+.list-left-1 {
+    width: 490px;
+    height: 38px;
+    display: flex;
+}
+
+.list-left-2 span {
+    color: #999;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.each-playlist {
+    width: 820px;
+    height: 502px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.each-1 {
+    width: 173px;
+    height: 223px;
+    margin: 0 25px 35px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.each {
+    width: 173px;
+    height: 173px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.each-1 a {
+    width: 173px;
+    height: 60px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+
+.each-2 {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 56px;
+    left: 54px;
+    /* display: none; */
+}
+
+.each-3 {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 13px;
+    left: 10px;
+    margin: 0 auto;
+    border: 15px solid #ffffff;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius: 5px;
+}
+
+
+/* hover的效果 */
+
+.each-1:hover {
+    font-weight: 650;
+}
+
+.each-1:hover .each-2 {
+    opacity: 1;
+    /* background-color: rgba(0, 0, 0, 1); */
+    font-weight: 650;
+    /* display: block; */
+    transition: all 0.4s;
+}
+
+.each-1:hover img {
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+
+
+/* 右边 */
+
+.song-list-right {
+    width: 350px;
+    height: 502px;
+    margin-left: 30px;
+}
+
+.classfly-0 {
+    height: 291px;
+    margin-bottom: 20px;
+}
+
+.classfly {
+    width: 350px;
+    height: 230px;
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.classfly-1 {
+    border: 1px solid #e8e8e8;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 23px;
+    height: 42px;
+    width: 105.99px;
+    text-align: center;
+}
+
+.classfly-1:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+
+/* 推荐电台 */
+
+.radio {
+    width: 385px;
+    height: 253px;
+}
+
+.radio-1 {
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-2 {
+    width: 85px;
+    height: 95x;
+    position: relative;
+}
+
+.radio-2 p {
+    display: inline;
+    text-align: center;
+}
+
+.radio-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ea4e1b;
+    margin-bottom: 8px;
+}
+
+.radio-3 .icon-sirendiantai1 {
+    font-size: 28px;
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 11px;
+}
+
+.radio-4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 1px;
+}
+
+.radio-5 {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 19px;
+}
+
+.radio-5::before {
+    content: "\E61E";
+}
+
+.radio-4:hover {
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+/* 第二个 */
+
+.radio-33 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff9200;
+    margin-bottom: 8px;
+}
+
+.radio-44 {
+    font-size: 28px;
+    color: #fff;
+    position: relative;
+    top: 14px;
+    left: 13px;
+    font-size: 16px;
+}
+
+.radio-44::before {
+    content: "\E614";
+}
+
+
+/* 大字报*/
+
+.poster {
+    width: 100%;
+    height: 360px;
+    position: relative;
+}
+
+.poster img {
+    display: block;
+    margin: 0 auto;
+}
+
+.poster .poster-left {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    /* background-color: #afafaf; */
+    font-size: 60px;
+    color: #afafaf;
+    left: -100px;
+    opacity: 0;
+}
+
+.poster-left::before {
+    content: "\E62C";
+}
+
+.poster:hover .poster-left {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.poster .poster-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    /* background-color: #afafaf; */
+    font-size: 60px;
+    color: #afafaf;
+    right: -100px;
+    opacity: 0;
+}
+
+.poster-right::before {
+    content: "\E62D";
+}
+
+.poster:hover .poster-right {
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+/*新歌首发  */
+
+.new-start {
+    width: 1200px;
+    height: 325.6px;
+    margin: 0 auto;
+}
+
+.new-start-0 {
+    width: 1200px;
+    height: 231px;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.new-start-1 {
+    width: 174.913px;
+    height: 228.2px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 30px 0 0;
+    position: relative;
+}
+
+.new-start p:nth-child(2) {
+    color: #333;
+}
+
+.new-start p:last-child {
+    color: #999;
+    font-size: 14px;
+}
+
+.new-start-1 .new-cover {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    z-index: 3;
+    border-radius: 50%;
+    position: absolute;
+    top: 65px;
+    right: -21px;
+}
+
+.new-start .new-start-2 {
+    width: 172.94px;
+    height: 172.94px;
+    overflow: hidden;
+}
+
+
+/* 阴影 */
+
+.new-start-3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 61px;
+    left: 62px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.new-start-icon {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 15px;
+    left: 19px;
+    color: #fff;
+}
+
+.new-start-icon::before {
+    content: "\E61E";
+}
+
+
+/* 移动上去的效果 */
+
+.start:hover .new-start-3 {
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.start:hover .new-start-2 {
+    transform: scale(1.08);
+    transition: all 0.6s;
+}
+
+.start:hover .new-start-5 {
+    font-weight: 600;
+    transition: all 0.6s;
+}
+
+.start:hover .new {
+    font-weight: 650;
+    /* transition: all 0.6s; */
+}
+
+.start:hover .new-1 {
+    font-weight: 550;
+    transition: all 0.6s;
 }

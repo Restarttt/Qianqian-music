@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>千千音乐-听见世界</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="http://static1.qianqian.com/web/s/css/app.bf379620769235f7.css">
 </head>
 
 <body>
+    <!-- 左边盒子定位fixed -->
+    <!-- <div class="quickmark">
+        <div class="quickmark-1">
+            <img src="http://static3.qianqian.com/web/down_load_app/img/qrcode.png" alt="" width="98px" height="98px">
+            <p>下载千千音乐新版APP</p>
+            <p>免费领取7天vip</p>
+        </div>
+
+    </div> -->
+    <!-- 右边盒子fixed -->
+    <div class="upward">
+        <img src="http://static1.qianqian.com/web/s/images/top.9c02ac0060c3aa4c.png" alt="" width="62px" height="56.5">
+        <img src="http://static1.qianqian.com/web/s/images/music-box.108e7ca05789b670.png" alt="" width="62px" height="56.5">
+        <img src="http://static1.qianqian.com/web/s/images/app_android.cfe42a5224b28668.png" alt="" width="62px" height="56.5">
+
+
+    </div>
+
+
+
     <!-- 第一部分导航栏 -->
     <div class="nav">
         <div class="nav-1">
@@ -40,13 +61,477 @@
                 </ul>
             </div>
             <!-- 搜索框-->
-            <div class="search"></div>
+            <div class="search">
+                <input type="text" value="请输入歌名、歌词、歌手或专辑">
+                <i class="iconfont t icon-search"></i>
+                <div class="search-down">
+                    <div class="search-down-1">
+                        <!-- 歌曲 -->
+                        <div class="drop-down-1">
+                            <span>歌曲</span>
+                        </div>
+                        <div class="drop-down">
+                            <ul>
+                                <li>
+                                    <a href="" target="blank">后来</a>
+                                    <p>刘若英</p>
+                                </li>
+                                <li>
+                                    <a href="" target="blank">花心</a>
+                                    <p>周华健</p>
+                                </li>
+                                <li>
+                                    <a href="" target="blank">你怎么舍得我难过</a>
+                                    <p>黄品源</p>
+                                </li>
+                                <li>
+                                    <a href="" target="blank">红莓花儿开（电影《囧途》）</a>
+                                    <p>毛不易</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!-- 歌手 -->
+                    <div class="search-down-2">
+
+                        <div class="singer">
+                            <div class="drop-down-1">
+                                <span>歌曲</span>
+                            </div>
+                            <div class="singer-1">
+                                <div class="singer-2">
+                                    <img src="" alt="">
+                                    <span>黄品源</span>
+                                </div>
+                                <div class="singer-2">
+                                    <img src="" alt="">
+                                    <span>黄品源</span>
+                                </div>
+                                <div class="singer-2">
+                                    <img src="" alt="">
+                                    <span>黄品源</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 专辑 -->
+                    <div class="search-down-3">
+
+                        <div class="alubm">
+                            <div class="drop-down-1">
+                                <span>歌曲</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
             <!-- 个人信息 -->
-            <div class="personal"></div>
+            <div class="personal">
+                <div class="personal-1">
+                    <img src="http://himg.bdimg.com/sys/portrait/item/915c52657374617274e998bf27c2.jpg" alt="" width="40px" height="40px" title="Restart阿">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAAAAXNSR0IArs4c6QAAAhNJREFUSA29lTuOwjAQhifLUnIAKCm4ACdYiRZxCuAYhGMgjkFDQRMJrkEJBS0SFIhs/mzGmjh+JSyMhGzPjH9/GT+IyGGr1SrOwgtHSkhoOZ/PoeO0yBb9JwiW98J8caZsGSKKolT6m/QLjUWhaZWoVERCpGlaiVuVHAHAFFrWypQWegcE8/lgFMg7IUJgcpBPQPhgok9CuGC+s2D+TugHczQaUb/f57mq3Ww2dD6f1Vh2ut0ujcdj6cr7x+ORdrud8ou1sHaMgPH6IrDf7+l2u6FbsuFwWBrLgSkGDWj5zApyv9/pcDhU5vd6PcKX6wYfYrpBA1o+s4JgIkqKn26mLzf5bPN1PYydIEgwbZFeFVM1QrcEa8C8ILYtkhWQ/T9Zyrc1ZEs4/yuzGAPX/4qpxFwVUzVM+bygttaS/a3sOiaTyYSyK/VTwKjXlpPQnk4nGgwG1G63lbvT6eQHFC0btmS73dLj8WBXqbU99S1khcBA+Hq9lt4WAEgIaCVJQpfLBd2KMQR2YTabqWogUZ2R6XS6RAIem6IyFSFfyV1xCYG1dHEFgkAIjOkWYa7rlvggML8EAocPxnaLbA9XCATWNR5MBNbr9eL5fMYsBF9d47nYctN2SD0rCJJegakDgbWcIE1h6kIEgdSFaQIRDBIK0xSiFogP5hWI2iASBn3dQm6HPofH3sPKibLl2yR9r0BA5xewsZdJMrXE0AAAAABJRU5ErkJggg=="
+                        alt="" width="14px" height="11.53px"></div>
+                <div class="personal-2">
+                </div>
+
+                <span>Restart阿</span>
+            </div>
 
         </div>
     </div>
+    <!-- 第二部分 顶导航 -->
+    <div class="topnav">
+        <div class="topnav-1">
+            <ul>
+                <li class="topnav-2"><a href="" target="blank">推荐</a></li>
+                <li><a href="" target="blank">歌单</a></li>
+                <li><a href="" target="blank">歌手</a></li>
+                <li><a href="" target="blank">榜单</a></li>
+                <li><a href="" target="blank">分类</a></li>
+                <li><a href="" target="blank">MV</a></li>
+                <li><a href="" target="blank">U榜</a></li>
+            </ul>
+        </div>
 
+    </div>
+
+    <!-- 第三部分内容 -->
+    <div class="main">
+        <div class="main-1">
+            <!-- 热门歌单 -->
+            <div class="song-list">
+                <!-- 左边 -->
+                <div class="song-list-left">
+                    <div class="list-left-1">
+                        <div class="list-left-2">
+                            <h2>热门歌单</h2>
+                            <span>更多</span>
+                        </div>
+                        <div class="list-left 3">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="each-playlist">
+                        <!-- 第一行 -->
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/bos_ugcclient_ad91b674c1d2603e7fefac3c8e77d1f6.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-时光正好"> 时光正好</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/bos_ugcclient_2ada25f397f1635bcd21ea8acff6f844.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-杏花雨"> 杏花雨</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <div class="each-1">
+                            <div class="each">
+
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/bos_ugcclient_95fb4b8a316226e90876b4c39e23b7fc.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-静思"> 静思</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/bos_ugcclient_ab63101616d0cf40bc3bd1db08ce6c0d.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-Sleep Soundly">Sleep Soundly</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <!-- 第二行 -->
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/bos_ugcclient_44ff8bf0f9605f51f76b72114933f9b0.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-Logdrum">Logdrum</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/bos_ugcclient_9a20183243f6084507b5a2ab19eab120.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-Don't Tell 'Em">Don't Tell 'Em</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.cdn.qianqian.com/ugcdiy/pic/c058933d342389ae7ec3a8deb8c9916d.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-那些绝对不能错过的 华语乐坛唱片（2）">那些绝对不能错过的 华语乐坛唱片（2）</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+                        <div class="each-1">
+                            <div class="each">
+                                <img src="http://musicugc.qianqian.com/ugcdiy/pic/4d06fa73819a7e076ce37da4db474505.jpg@s_2,w_346,h_346" alt="" width="173px" height="173px">
+                            </div>
+                            <a href="" target="blank" title="歌单-华丽的摇滚诗，阿信作品集">华丽的摇滚诗，阿信作品集</a>
+                            <div class="each-2">
+                                <div class="each-3"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <!-- 右边 -->
+                <div class="song-list-right">
+
+                    <!-- 分类听歌 -->
+
+                    <div class="classfly-0">
+                        <div class="list-left-2">
+                            <h2>分类听歌</h2>
+                            <span>更多</span>
+                        </div>
+                        <div class="classfly">
+
+                            <div class="classfly-1" title="情歌">
+                                情歌
+                            </div>
+                            <div class="classfly-1" title="红歌">
+                                红歌
+                            </div>
+                            <div class="classfly-1" title="劲爆">
+                                劲爆
+                            </div>
+                            <div class="classfly-1" title="天籁">
+                                天籁
+                            </div>
+                            <div class="classfly-1" title=" 经典老歌">
+                                经典老歌
+                            </div>
+                            <div class="classfly-1" title="欧美">
+                                欧美
+                            </div>
+                            <div class="classfly-1" title="网络歌曲">
+                                网络歌曲
+                            </div>
+                            <div class="classfly-1" title="民歌">
+                                民歌
+                            </div>
+
+                            <div class="classfly-1" title="80后">
+                                80后
+                            </div>
+                            <div class="classfly-1" title="儿歌">
+                                儿歌
+                            </div>
+                            <div class="classfly-1" title="伤感">
+                                伤感
+                            </div>
+                            <div class="classfly-1" title="安静">
+                                安静
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 推荐电台 -->
+
+                    <div class="radio">
+                        <div class="list-left-2">
+                            <h2>推荐电台</h2>
+                            <span>更多</span>
+                        </div>
+                        <div class="radio-1">
+                            <div class="radio-2">
+                                <div class="radio-3">
+                                    <span class="iconfont icon-sirendiantai1 images">
+                                    </span>
+                                </div>
+                                <p>私人电台</p>
+                                <div class="radio-4">
+                                    <div class="iconfont radio-5">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-2">
+                                <div class="radio-3">
+                                    <span class="iconfont icon-sirendiantai1 images">
+                                    </span>
+                                </div>
+                                <p>在家</p>
+                                <div class="radio-4">
+                                    <div class="iconfont radio-5">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-2">
+                                <div class="radio-33">
+                                    <span class="iconfont radio-44">
+                                    </span>
+                                </div>
+                                <p>工作</p>
+                                <div class="radio-4">
+                                    <div class="iconfont radio-5">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-2">
+                                <div class="radio-3">
+                                    <span class="iconfont icon-sirendiantai1 images">
+                                    </span>
+                                </div>
+                                <p></p>
+                                <div class="radio-4">
+                                    <div class="iconfont radio-5">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 大字报 -->
+            <div class="poster">
+                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_15830624496a533e7709923463512415e186f803d8.jpg@s_2,w_750,h_300" alt="" width="750px" height="300px">
+                <div class=" iconfont poster-left">
+
+                </div>
+                <div class=" iconfont poster-right">
+
+                </div>
+
+            </div>
+
+            <!-- 新歌首发 -->
+            <div class="new-start">
+
+                <div class="list-left-2">
+                    <h2>新歌首发</h2>
+                    <span>更多</span>
+                </div>
+                <!-- 第一个 -->
+
+                <div class="new-start-0">
+                    <div class="start">
+                        <div class="new-start-1">
+                            <div class="new-start-2">
+                                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_1583140988a9c5689752a84943aeca325a06c56411.jpg@s_2,w_346,h_346" alt="" width="172.94" height="172.94px">
+                            </div>
+                            <p class="new">千千音乐3月速递</p>
+                            <p class="new-1">新歌抢先听</p>
+                            <div class="new-start-3 ">
+                                <div class="iconfont new-start-icon">
+                                </div>
+                            </div>
+                            <div class="new-cover"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- 第二个 -->
+
+                    <div class="start">
+
+                        <div class="new-start-1">
+                            <div class="new-start-2">
+                                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_1583318130347598961bcd401cb51d095377f19565.jpg@s_2,w_346,h_346" alt="" width="172.94" height="172.94px">
+                            </div>
+                            <p>千千音乐3月速递</p>
+                            <p>新歌抢先听</p>
+                            <div class="new-cover"></div>
+                            <div class="new-start-3 ">
+                                <div class="iconfont new-start-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 第三个 -->
+
+                    <div class="start">
+
+                        <div class="new-start-1">
+                            <div class="new-start-2">
+                                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_1583317840425873393de5e4e8a30cb0525f8a28fc.jpg@s_2,w_346,h_346" alt="" width="172.94" height="172.94px">
+                            </div>
+                            <p>千千音乐3月速递</p>
+                            <p>新歌抢先听</p>
+                            <div class="new-cover"></div>
+                            <div class="new-start-3 ">
+                                <div class="iconfont new-start-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 第四个 -->
+
+                    <div class="start">
+
+                        <div class="new-start-1">
+                            <div class="new-start-2">
+                                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_15833922505ba1acb3da7eae9a4834609bac4fc285.jpg@s_2,w_346,h_346" alt="" width="172.94" height="172.94px">
+                            </div>
+                            <p class="new-start-4">千千音乐3月速递</p>
+                            <p class="new-start-5">新歌抢先听</p>
+                            <div class="new-cover"></div>
+                            <div class="new-start-3 ">
+                                <div class="iconfont new-start-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 第五个 -->
+
+                    <div class="start">
+
+                        <div class="new-start-1">
+                            <div class="new-start-2">
+                                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_15832311807cad9e360c635f5cd291d3232fcad89c.jpg@s_2,w_346,h_346" alt="" width="172.94" height="172.94px">
+                            </div>
+                            <p>千千音乐3月速递</p>
+                            <p>新歌抢先听</p>
+                            <div class="new-cover"></div>
+                            <div class="new-start-3 ">
+                                <div class="iconfont new-start-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 第六个 -->
+
+                    <div class="start">
+
+                        <div class="new-start-1">
+                            <div class="new-start-2">
+                                <img src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_15832321834fa4b4192de699678fcb97a821dd3513.jpg@s_2,w_346,h_346" alt="" width="172.94" height="172.94px">
+                            </div>
+                            <p>千千音乐3月速递</p>
+                            <p>新歌抢先听</p>
+                            <div class="new-cover"></div>
+                            <div class="new-start-3 ">
+                                <div class="iconfont new-start-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <!-- 排行榜 -->
+        <div class="ranking-list">
+
+        </div>
+        <!-- 热门歌手 -->
+        <div class="singer"></div>
+        <!-- 精选mv -->
+        <div class="choiceness"></div>
+        <!-- 热门活动 -->
+        <div class="activity"></div>
+
+
+
+    </div>
+    </div>
 
 
 
