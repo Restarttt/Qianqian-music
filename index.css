@@ -316,6 +316,7 @@ h2 {
     width: 1200px;
     height: 547px;
     display: flex;
+    margin-bottom: 60px;
 }
 
 .song-list-left {
@@ -348,7 +349,7 @@ h2 {
     height: 223px;
     margin: 0 25px 35px 0;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .each {
@@ -463,36 +464,24 @@ h2 {
 
 .radio-1 {
     margin-top: 20px;
-    width: 350px;
+    width: 373px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .radio-2 {
-    width: 85px;
-    height: 95x;
+    width: 62px;
+    height: 90px;
     position: relative;
+    margin: 0 13px 15px 0;
 }
 
 .radio-2 p {
-    display: inline;
-    text-align: center;
-}
-
-.radio-3 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ea4e1b;
-    margin-bottom: 8px;
-}
-
-.radio-3 .icon-sirendiantai1 {
-    font-size: 28px;
-    color: #fff;
+    display: flex;
+    justify-content: center;
     position: relative;
-    top: 13px;
-    left: 11px;
+    left: -3px;
 }
 
 .radio-4 {
@@ -522,9 +511,47 @@ h2 {
 }
 
 
-/* 第二个 */
+/* 私人电台 */
 
-.radio-33 {
+.radio-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ea4e1b;
+    margin-bottom: 8px;
+}
+
+.radio .radio-11 {
+    font-size: 28px;
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 11px;
+}
+
+.radio-11::before {
+    content: "\E63C";
+}
+
+
+/* 在家 */
+
+.radio .radio-22 {
+    font-size: 26px;
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 11px;
+}
+
+.radio-22::before {
+    content: "\E63B";
+}
+
+
+/* 店铺 */
+
+.radio-shop {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -532,17 +559,131 @@ h2 {
     margin-bottom: 8px;
 }
 
-.radio-44 {
+.radio .shop {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 14px;
+    left: 11px;
+}
+
+.shop::before {
+    content: "\E614";
+}
+
+
+/* 轻松 */
+
+.radio-esay {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4bcbe8;
+    margin-bottom: 8px;
+}
+
+.radio .esay {
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 17px;
+    left: 9px;
+}
+
+.esay::before {
+    content: "\E607";
+}
+
+
+/* 上网 */
+
+.radio-internet {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d73535;
+    margin-bottom: 8px;
+}
+
+.radio .internet {
     font-size: 28px;
     color: #fff;
     position: relative;
     top: 14px;
-    left: 13px;
-    font-size: 16px;
+    left: 11px;
 }
 
-.radio-44::before {
-    content: "\E614";
+.internet::before {
+    content: "\E639";
+}
+
+
+/* 运动 */
+
+.radio-exercise {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #697ac7;
+    margin-bottom: 8px;
+}
+
+.radio .exercise {
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.exercise::before {
+    content: "\E60F";
+}
+
+
+/* 工作 */
+
+.radio-work {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d31154;
+    margin-bottom: 8px;
+}
+
+.radio .work {
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.work::before {
+    content: "\E63A";
+}
+
+
+/* 甜蜜 */
+
+.radio-sweet {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6baaeb;
+    margin-bottom: 8px;
+}
+
+.radio .sweet {
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.sweet::before {
+    content: "\E608";
 }
 
 
@@ -550,13 +691,25 @@ h2 {
 
 .poster {
     width: 100%;
-    height: 360px;
+    height: 347px;
     position: relative;
 }
 
 .poster img {
     display: block;
     margin: 0 auto;
+}
+
+.poster .poster-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    /* background-color: #afafaf; */
+    font-size: 60px;
+    color: #afafaf;
+    right: -100px;
+    opacity: 0;
 }
 
 .poster .poster-left {
@@ -608,6 +761,7 @@ h2 {
     width: 1200px;
     height: 325.6px;
     margin: 0 auto;
+    position: relative;
 }
 
 .new-start-0 {
@@ -650,7 +804,9 @@ h2 {
 .new-start .new-start-2 {
     width: 172.94px;
     height: 172.94px;
+    margin-bottom: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 
@@ -689,7 +845,7 @@ h2 {
 }
 
 .start:hover .new-start-2 {
-    transform: scale(1.08);
+    transform: scale(1.06);
     transition: all 0.6s;
 }
 
@@ -700,10 +856,476 @@ h2 {
 
 .start:hover .new {
     font-weight: 650;
-    /* transition: all 0.6s; */
+    transition: all 0.6s;
 }
 
 .start:hover .new-1 {
-    font-weight: 550;
+    font-weight: 500;
     transition: all 0.6s;
+}
+
+.new-start:hover .poster-left {
+    opacity: 1;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.new-start:hover .poster-right {
+    opacity: 1;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.new-start .poster-left {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    color: #afafaf;
+    left: -100px;
+    opacity: 0;
+}
+
+.new-start .poster-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    /* background-color: #afafaf; */
+    font-size: 60px;
+    color: #afafaf;
+    right: -100px;
+    opacity: 0;
+}
+
+
+/* 小圆点 */
+
+.dot {
+    width: 67px;
+    margin: 0 auto;
+    margin-top: 45px;
+    display: flex;
+}
+
+.dot-1 {
+    width: 10px;
+    height: 2px;
+    background-color: #333;
+    margin: 0 8px 0 0;
+    border-radius: 20%;
+}
+
+.dot-2 {
+    width: 4px;
+    height: 2px;
+    background-color: #d8d8d8;
+    margin: 0 8px 0 0;
+    border-radius: 20%;
+}
+
+
+/* 排行榜 */
+
+.ranking-list {
+    width: 1200px;
+    height: 606px;
+    margin-top: 60px;
+}
+
+.ranking-list-0 {
+    width: 1200px;
+    height: 540px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.ranking-list-1 {
+    width: 380px;
+    height: 544px;
+    border: 1px solid rgba(91, 148, 0, .3);
+    margin-right: 20px;
+}
+
+
+/* 第一列新歌榜 */
+
+.new-song {
+    width: 379px;
+    height: 66px;
+    background-color: rgba(91, 148, 0, .1);
+}
+
+.new-song .new-song-0 {
+    font-size: 53px;
+    color: #fff;
+    position: relative;
+    top: 22px;
+    left: 10px;
+    font-weight: 500;
+}
+
+.new-song-0::before {
+    content: "\E60C";
+}
+
+.new-song h3 {
+    z-index: 100;
+    position: relative;
+    color: #5b9400;
+    font-size: 22px;
+    font-weight: 550;
+    left: 18px;
+    display: inline-block;
+}
+
+.new-song-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-song-2 {
+    width: 30px;
+    height: 30px;
+    background-color: #5b9400;
+    position: relative;
+    margin-right: 20px;
+}
+
+.new-song-3 {
+    color: #fff;
+    position: relative;
+    line-height: 30px;
+    left: 9px;
+    z-index: 20;
+}
+
+.new-song-3::before {
+    content: "\E61D";
+}
+
+.new-song-4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.new-song-2:hover .new-song-4 {
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+
+/* .new-song-2:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    transition: all 0.6s;
+} */
+
+
+/* 新歌榜列表 */
+
+.new-song-list {
+    width: 378px;
+    height: 408px;
+    margin-top: 10px;
+}
+
+.new-song-list-1 {
+    width: 378px;
+    height: 68px;
+    display: flex;
+    padding: 15px;
+    position: relative;
+}
+
+.new-song-list span {
+    color: #5b9400;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.new-song-list-2 {
+    display: flex;
+    align-items: center;
+}
+
+.new-song-list-3 {
+    margin-left: 10px;
+}
+
+a.new-song-list-4 {
+    color: #333;
+    text-overflow: ellipsis;
+}
+
+a.new-song-list-5 {
+    color: #999;
+    font-weight: 200;
+}
+
+
+/* 移上去的效果 */
+
+.new-song-list-1:hover {
+    background-color: #fafafa;
+}
+
+.new-song-list-1:hover .new-song-list-4 {
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.new-song-list-1:hover .new-song-list-5 {
+    color: #000;
+}
+
+
+/* 播放按钮 */
+
+.paly-buttom {
+    position: absolute;
+    display: flex;
+    right: 5px;
+    font-size: 24px;
+    color: #484848;
+}
+
+.paly-buttom-1 {
+    margin-right: 15px;
+}
+
+.main .paly-buttom-1 .play-buttom-2 {
+    font-size: 24px;
+    color: #484848;
+}
+
+.paly-buttom-2::before {
+    content: "\E611";
+}
+
+.paly-buttom-3::before {
+    content: "\E612";
+}
+
+.paly-buttom-4::before {
+    content: "\E618";
+}
+
+
+/* 热门歌手 */
+
+.singer {
+    width: 100%;
+    height: 224px;
+    margin: 40px 0;
+}
+
+.singer-1 {
+    width: 1200px;
+    height: 224px;
+    margin: 30px auto;
+    display: flex;
+}
+
+.singer-2 {
+    width: 126.91px;
+    height: 158.51px;
+    margin: 0 38px;
+    display: inline-block;
+    text-align: center;
+}
+
+.singer-2 p a {
+    color: #333;
+}
+
+.singer-3 {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.singer-3 img {
+    border-radius: 50%;
+}
+
+.singer-2:hover .singer-3 {
+    transform: scale(1.06);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.singer-2:hover a {
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+/* 精选mv */
+
+.choiceness {
+    width: 100%;
+    height: 333px;
+    position: relative;
+}
+
+.choiceness-0 {
+    width: 1247px;
+    /* height: 305.6px; */
+    margin: 0 auto;
+    display: flex;
+}
+
+.choiceness-1 {
+    width: 277.5px;
+    height: 208.75px;
+    margin: 30px 25px 0 0;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.choiceness-2 {
+    width: 275.5px;
+    height: 155.15px;
+    margin: 0 30px 10px 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.choiceness-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 27%;
+    left: 40%;
+    opacity: 0;
+}
+
+.choiceness .choiceness-4 {
+    color: #fff;
+    position: relative;
+    top: 30%;
+    left: 3px;
+}
+
+.choiceness-4::after {
+    content: "\E61E";
+}
+
+a.choiceness-6 {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 277.5px;
+}
+
+
+/*箭头 */
+
+.choiceness .choiceness-left {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    color: #afafaf;
+    left: -70px;
+    opacity: 0;
+}
+
+.choiceness-left::after {
+    content: "\E62C";
+}
+
+.choiceness .choiceness-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    color: #afafaf;
+    right: -39px;
+    opacity: 0;
+}
+
+.choiceness-right::after {
+    content: "\E62D";
+}
+
+
+/* hover的效果 */
+
+.choiceness-1:hover .choiceness-3 {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.choiceness-1:hover {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.choiceness-1:hover .choiceness-2 {
+    transform: scale(1.06);
+    transition: 0.3s;
+}
+
+.choiceness:hover .choiceness-left {
+    opacity: 1;
+    transition: all 3s;
+}
+
+.choiceness:hover .choiceness-right {
+    opacity: 1;
+    transition: all 3s;
+}
+
+
+/* 热门活动*/
+
+.activity {
+    width: 100%;
+    height: 249px;
+    margin-top: 30px;
+}
+
+.activity-1 {
+    width: 1230px;
+    height: 186px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.activity-2 {
+    display: inline-block;
+    text-align: center;
+    width: 409px;
+    height: 184px;
+    margin-right: 20px;
+}
+
+.activity-3 {
+    width: ;
+    height: ;
+    margin-bottom: 10px;
+}
+
+
+/* hover的效果 */
+
+.activity-2:hover {
+    font-weight: 500;
 }
