@@ -801,12 +801,20 @@ h2 {
     right: -21px;
 }
 
-.new-start .new-start-2 {
+.new-start-2 {
     width: 172.94px;
     height: 172.94px;
     margin-bottom: 10px;
-    overflow: hidden;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.new-start-2 img {
+    overflow: hidden;
+}
+
+.new-1 {
+    color: #999;
 }
 
 
@@ -844,7 +852,7 @@ h2 {
     transition: all 0.6s;
 }
 
-.start:hover .new-start-2 {
+.start:hover .new-start-2 img {
     transform: scale(1.06);
     transition: all 0.6s;
 }
@@ -860,7 +868,7 @@ h2 {
 }
 
 .start:hover .new-1 {
-    font-weight: 500;
+    color: #000;
     transition: all 0.6s;
 }
 
@@ -1057,6 +1065,10 @@ h2 {
     align-items: center;
 }
 
+.new-song-list-2 img {
+    border: 1px solid #eee;
+}
+
 .new-song-list-3 {
     margin-left: 10px;
 }
@@ -1069,6 +1081,19 @@ a.new-song-list-4 {
 a.new-song-list-5 {
     color: #999;
     font-weight: 200;
+}
+
+.full {
+    width: 378px;
+    display: inline-block;
+    text-align: end;
+}
+
+.full span a {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
 }
 
 
@@ -1087,6 +1112,10 @@ a.new-song-list-5 {
     color: #000;
 }
 
+.full a:hover {
+    font-weight: 600;
+}
+
 
 /* 播放按钮 */
 
@@ -1100,23 +1129,59 @@ a.new-song-list-5 {
 
 .paly-buttom-1 {
     margin-right: 15px;
+    display: none;
 }
 
-.main .paly-buttom-1 .play-buttom-2 {
+.paly-buttom-1 .paly-buttom-2 {
     font-size: 24px;
     color: #484848;
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 .paly-buttom-2::before {
     content: "\E611";
 }
 
+.paly-buttom-1 .paly-buttom-3 {
+    font-size: 24px;
+    color: #484848;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .paly-buttom-3::before {
     content: "\E612";
 }
 
+.paly-buttom-1 .paly-buttom-4 {
+    font-size: 24px;
+    color: #484848;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .paly-buttom-4::before {
     content: "\E618";
+}
+
+
+/* hover的效果 */
+
+.paly-buttom-2:hover {
+    opacity: 1;
+}
+
+.paly-buttom-3:hover {
+    opacity: 1;
+}
+
+.paly-buttom-4:hover {
+    opacity: 1;
+}
+
+.new-song-list-1:hover .paly-buttom-1 {
+    display: block;
 }
 
 
@@ -1150,6 +1215,7 @@ a.new-song-list-5 {
 .singer-3 {
     width: 125px;
     height: 125px;
+    border-radius: 50%;
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -1158,7 +1224,7 @@ a.new-song-list-5 {
     border-radius: 50%;
 }
 
-.singer-2:hover .singer-3 {
+.singer-2:hover .singer-3 img {
     transform: scale(1.06);
     transition: all 0.3s;
     cursor: pointer;
@@ -1225,11 +1291,16 @@ a.new-song-list-5 {
     content: "\E61E";
 }
 
-a.choiceness-6 {
-    display: inline-block;
+p.mv {
+    display: block;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 277.5px;
+    overflow: hidden;
+}
+
+.mv-1 a {
+    color: #999;
 }
 
 
@@ -1278,7 +1349,7 @@ a.choiceness-6 {
     transition: 0.3s;
 }
 
-.choiceness-1:hover .choiceness-2 {
+.choiceness-1:hover .choiceness-2 img {
     transform: scale(1.06);
     transition: 0.3s;
 }
@@ -1291,6 +1362,14 @@ a.choiceness-6 {
 .choiceness:hover .choiceness-right {
     opacity: 1;
     transition: all 3s;
+}
+
+.choiceness-1:hover .mv a {
+    font-weight: 600;
+}
+
+.choiceness-1:hover .mv-1 a {
+    color: #333;
 }
 
 
@@ -1318,14 +1397,20 @@ a.choiceness-6 {
 }
 
 .activity-3 {
-    width: ;
-    height: ;
+    width: 378px;
+    height: 152px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 
 /* hover的效果 */
 
-.activity-2:hover {
-    font-weight: 500;
+.activity-2:hover a {
+    font-weight: 600;
+}
+
+.activity-2:hover .activity-3 img {
+    transform: scale(1.06);
+    transition: 0.5s;
 }
