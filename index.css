@@ -949,6 +949,9 @@ h2 {
     display: flex;
 }
 
+
+/* 第一列新歌榜 */
+
 .ranking-list-1 {
     width: 380px;
     height: 544px;
@@ -956,13 +959,11 @@ h2 {
     margin-right: 20px;
 }
 
-
-/* 第一列新歌榜 */
-
 .new-song {
     width: 379px;
     height: 66px;
     background-color: rgba(91, 148, 0, .1);
+    opacity: 0.6;
 }
 
 .new-song .new-song-0 {
@@ -978,7 +979,7 @@ h2 {
     content: "\E60C";
 }
 
-.new-song h3 {
+.ranking-list-1 h3 {
     z-index: 100;
     position: relative;
     color: #5b9400;
@@ -1030,11 +1031,186 @@ h2 {
 }
 
 
-/* .new-song-2:hover {
-    opacity: 1;
-    transform: scale(1.03);
-    transition: all 0.6s;
-} */
+/* 第二列热歌榜 */
+
+.ranking-list-2 {
+    width: 380px;
+    height: 544px;
+    border: 1px solid rgba(219, 88, 0, .3);
+    margin-right: 20px;
+}
+
+.ranking-list-2 h3 {
+    z-index: 100;
+    position: relative;
+    color: #db5800;
+    font-size: 22px;
+    font-weight: 550;
+    left: 18px;
+    display: inline-block;
+}
+
+.hot-song {
+    width: 379px;
+    height: 66px;
+    background-color: rgba(219, 88, 0, .3);
+    opacity: 0.6;
+}
+
+.hot-song .hot-song-0 {
+    font-size: 53px;
+    color: #fff;
+    position: relative;
+    top: 22px;
+    left: 10px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.hot-song-0::before {
+    content: "\E60A";
+}
+
+.hot-song-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hot-song-2 {
+    width: 30px;
+    height: 30px;
+    background-color: #db5800;
+    position: relative;
+    margin-right: 20px;
+}
+
+.new-song-list .hot-song-5 {
+    color: #db5800;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+/* 第三列 网络歌曲*/
+
+.ranking-list-3 {
+    width: 380px;
+    height: 544px;
+    border: 1px solid rgba(219, 88, 0, .3);
+    margin-right: 20px;
+}
+
+.ranking-list-3 h3 {
+    z-index: 100;
+    position: relative;
+    color: #21bfa6;
+    font-size: 22px;
+    font-weight: 550;
+    left: 18px;
+    display: inline-block;
+}
+
+.network-song {
+    width: 379px;
+    height: 66px;
+    background-color: rgba(219, 88, 0, .3);
+    opacity: 0.6;
+}
+
+.network-song .network-song-0 {
+    font-size: 53px;
+    color: #fff;
+    position: relative;
+    top: 22px;
+    left: 10px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.network-song-0::before {
+    content: "\E60B";
+}
+
+.network-song-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.networkt-song-2 {
+    width: 30px;
+    height: 30px;
+    background-color: #21bfa6;
+    position: relative;
+    margin-right: 20px;
+}
+
+.new-song-list .hot-song-5 {
+    color: #21bfa6;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.ranking-list-3 {
+    width: 380px;
+    height: 544px;
+    border: 1px solid rgba(33, 191, 166, .3);
+    margin-right: 20px;
+}
+
+.ranking-list-3 h3 {
+    z-index: 100;
+    position: relative;
+    color: #21bfa6;
+    font-size: 22px;
+    font-weight: 550;
+    left: 18px;
+    display: inline-block;
+}
+
+.network-song {
+    width: 379px;
+    height: 66px;
+    background-color: rgba(33, 191, 166, .3);
+    opacity: 0.6;
+}
+
+.network-song .network-song-0 {
+    font-size: 53px;
+    color: #fff;
+    position: relative;
+    top: 22px;
+    left: 10px;
+    font-weight: 500;
+}
+
+.network-song-0::before {
+    content: "\E60B";
+}
+
+.network-song-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.network-song-2 {
+    width: 30px;
+    height: 30px;
+    background-color: #21bfa6;
+    position: relative;
+    margin-right: 20px;
+}
+
+.new-song-list .network-5 {
+    color: #21bfa6;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
 
 
 /* 新歌榜列表 */
@@ -1055,6 +1231,13 @@ h2 {
 
 .new-song-list span {
     color: #5b9400;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.new-song-list .number {
+    color: #939393;
     font-size: 18px;
     font-weight: 600;
     margin-right: 10px;
@@ -1378,7 +1561,7 @@ p.mv {
 .activity {
     width: 100%;
     height: 249px;
-    margin-top: 30px;
+    margin: 50px auto;
 }
 
 .activity-1 {
@@ -1413,4 +1596,242 @@ p.mv {
 .activity-2:hover .activity-3 img {
     transform: scale(1.06);
     transition: 0.5s;
+}
+
+
+/* 版权 */
+
+.copyright {
+    width: 100%;
+    height: 450px;
+    background-color: #333;
+    margin-top: 80px;
+}
+
+.copyright-1 {
+    width: 1200px;
+    height: 450px;
+    margin: auto;
+}
+
+.copyright-top {
+    width: 1200px;
+    height: 333.6px;
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    display: flex;
+}
+
+.copyright-bottom {
+    width: 1200px;
+    height: 130.6px;
+}
+
+
+/* 下载 */
+
+.download {
+    width: 365px;
+    height: 240.6px;
+    margin-right: 75px;
+}
+
+.copyright-1 h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+.download-0 {
+    width: 365px;
+    display: flex;
+    justify-self: start;
+}
+
+.download .download-0 p {
+    margin-top: 20px;
+}
+
+.copyright-1 a {
+    font-size: 14px;
+    color: #939393;
+    /* position: relative;
+    left: 1px; */
+}
+
+.download-1 {
+    width: 80px;
+    height: 71.6px;
+    margin-right: 15px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: -15px;
+}
+
+.download .download-11 {
+    font-size: 35px;
+    color: #999;
+    cursor: pointer;
+    /* margin-right: 40px; */
+}
+
+.download-11::before {
+    content: "\E626";
+}
+
+.download .download-22 {
+    font-size: 35px;
+    color: #999;
+    cursor: pointer;
+}
+
+.download-22::before {
+    content: "\E627";
+}
+
+.download .download-33 {
+    font-size: 35px;
+    color: #999;
+    cursor: pointer;
+    /* margin-right: 40px; */
+}
+
+.download-33::before {
+    content: "\E628";
+}
+
+.download .download-44 {
+    font-size: 35px;
+    color: #999;
+    cursor: pointer;
+}
+
+.download-44::before {
+    content: "\E629";
+}
+
+
+/* 移动上去 */
+
+.download-1:hover a {
+    font-weight: 600;
+    color: #939393;
+}
+
+
+/* 关于千千 */
+
+.regared {
+    width: 520px;
+    height: 240.6px;
+}
+
+.regared-1 {
+    width: 340px;
+    height: 222px;
+}
+
+.regared span {
+    display: inline-block;
+    margin-right: 44px;
+    margin-bottom: 30px;
+}
+
+.regared span a {
+    padding-bottom: 40px;
+}
+
+.regared-1 span a:hover {
+    font-weight: 600;
+    color: #939393;
+}
+
+
+/* 关注 */
+
+.attention {
+    width: 340px;
+    height: 240.6px;
+}
+
+.attention-1 {
+    width: 296px;
+    height: 206.8px;
+}
+
+.listen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listen-1 {
+    width: 392px;
+    padding: 0 30px 30px 0;
+}
+
+.attention a {
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+}
+
+.attention .listen-11 {
+    font-size: 30px;
+    color: #939393;
+}
+
+.listen-11::before {
+    content: "\E630";
+}
+
+.attention .listen-22 {
+    font-size: 30px;
+    color: #939393;
+}
+
+.listen-22::before {
+    content: "\E615";
+}
+
+.attention .listen-33 {
+    font-size: 30px;
+    color: #939393;
+}
+
+.listen-33::before {
+    content: "\E616";
+}
+
+
+/* hover上 */
+
+.attention a:hover {
+    font-weight: 600;
+    color: #939393;
+}
+
+
+/* 文字 */
+
+.copyright-bottom {
+    width: 100%;
+    height: 117.8px;
+}
+
+.copyright-bottom-1 {
+    display: inline-block;
+    width: 1200px;
+    height: 117.8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright-bottom-1 p {
+    color: #939393;
+    padding: 0 0 10px 0;
+}
+
+.copyright-bottom-1 a:hover {
+    color: #939393;
 }
