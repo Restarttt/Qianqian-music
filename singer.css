@@ -17,6 +17,196 @@ input {
 }
 
 
+/* 左边固定盒子 */
+
+.quickmark {
+    width: 156px;
+    height: 166px;
+    background-color: #f7f7f7;
+    position: fixed;
+    margin: 0 auto;
+    top: 139px;
+    left: 12px;
+    z-index: 2;
+}
+
+.quickmark-1 {
+    width: 156px;
+    height: 134px;
+    /* margin: 0 auto; */
+    margin-top: 18px;
+    display: inline-block;
+    text-align: center;
+}
+
+.quickmark-1 p {
+    color: #333;
+    font-size: 12px;
+}
+
+.quickmark-1 p:last-child {
+    color: #E13228;
+}
+
+
+/* 右边固定盒子 */
+
+.sidebar {
+    width: 50px;
+    height: 300px;
+    position: fixed;
+    background-color: #e4e4e4;
+    right: 5px;
+    top: 137px;
+}
+
+.sidebar-1 {
+    width: 50px;
+    height: 50px;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1068px 0;
+}
+
+.sidebar-2 {
+    width: 50px;
+    height: 50px;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1164px 60px;
+}
+
+.sidebar-2::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #d4d3d3;
+    position: relative;
+    top: 34px;
+    left: 10px;
+}
+
+.sidebar-2:hover {
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1224px -60px;
+}
+
+.sidebar-3 {
+    width: 50px;
+    height: 50px;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1188px 0;
+}
+
+.sidebar-3::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #d4d3d3;
+    position: relative;
+    top: 34px;
+    left: 10px;
+}
+
+.sidebar-3:hover {
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1308px 0px;
+}
+
+.sidebar-4 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1344px 60px;
+}
+
+.sidebar-4:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #d4d3d3;
+    position: relative;
+    top: 34px;
+    left: 10px;
+}
+
+.sidebar-4:hover {
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1248px 0px;
+}
+
+.sider-download {
+    position: absolute;
+    width: 138px;
+    height: 230px;
+    left: -143px;
+    border: 1px solid #e4e4e4;
+    background-color: #f7f7f7;
+    display: none;
+}
+
+.sider-download-1 {
+    width: 115px;
+    height: 112px;
+    margin: 15px auto;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)1707px 0px;
+}
+
+.sider-download p {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.sider-download-2 {
+    padding: 3px 8px;
+    background-color: #e13228;
+    width: 100px;
+    border-radius: 9px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sider-download-2 span {
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/* hover */
+
+.sidebar-4:hover .sider-download {
+    display: block;
+}
+
+.sidebar-5 {
+    width: 50px;
+    height: 50px;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-984px 60px;
+}
+
+.sidebar-5:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #d4d3d3;
+    position: relative;
+    top: 34px;
+    left: 10px;
+}
+
+.sidebar-5:hover {
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1128px 0px;
+}
+
+.sidebar-6 {
+    width: 50px;
+    height: 50px;
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1284px 60px;
+}
+
+.sidebar-6:hover {
+    background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1104px -60px;
+}
+
+
 /* 第一部分  页头导航栏 */
 
 .header {
@@ -269,10 +459,14 @@ input {
     display: inline-block;
 }
 
-.name-2 span:last-child {
+.name-2 span.name-4 {
     color: #999;
     font-size: 14px;
     margin-top: 5px;
+}
+
+.name-2 span.name-4:hover {
+    color: #e13228;
 }
 
 
@@ -280,6 +474,8 @@ input {
 
 .name-3 {
     margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .hot {
@@ -315,7 +511,22 @@ input {
     font-size: 12px;
 }
 
+.name-5 .transpond {
+    font-size: 31px;
+    margin: 0 4px 0 16px;
+}
 
+.name-5 {
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.name-5:hover {
+    color: #e13228;
+}
+
+.
 /* 第二部分内容 */
 
 .container {
@@ -746,7 +957,7 @@ input {
     width: 123px;
     border: 1px solid #e8e8e8;
     border-radius: 20px;
-    padding: 2px 10px;
+    padding: 1px 10px;
     margin-top: 5px;
     display: inline-block;
     text-align: center;
