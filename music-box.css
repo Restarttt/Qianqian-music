@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+}
+
+
+/* 导航栏 */
+
+.nav {
+    width: 100%;
+    height: 45px;
+    background-color: #e13228;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 105px;
+    height: 34px;
+    margin: 0 50px 0 50px;
+    background-image: url(http://static2.qianqian.com/play/player/t/i/qGEfHA2X.png);
+}
+
+.input {
+    width: 220px;
+    height: 24px;
+    position: relative;
+    margin-right: 15px;
+}
+
+input {
+    width: 220px;
+    height: 24px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 18px;
+    background-color: #d11c11;
+}
+
+.input i {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    display: inline-block;
+    /* left: -36px; */
+    background: url(http://static3.qianqian.com/play/player/t/i/JbOgqWR1.png) no-repeat;
+    /* top: 4px; */
+    right: 1px;
+    top: 4px;
+}
+
+.keyword span {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 3px;
+}
+
+
+/* 右边 */
+
+
+/* 个人 */
+
+.nav-right {
+    width: 400px;
+    /* height: 26.8px; */
+    margin-right: 20px;
+    /* line-height: 44px; */
+    display: flex;
+    align-items: center;
+}
+
+
+/* .personal {
+    height: 26.8px;
+} */
+
+.nav-right span {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.personal a {
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+    background: url(http://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat scroll right -6px;
+}
+
+.personal::after {
+    content: "";
+    display: inline-block;
+    width: 1.5px;
+    height: 14px;
+    background-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    top: 3px;
+}
+
+.personal i {
+    width: 11px;
+    height: 10px;
+    position: relative;
+    left: 4px;
+    display: inline-block;
+    background: url(http://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -504px -1044px no-repeat;
+}
