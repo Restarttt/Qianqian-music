@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* letter-spacing: 1px; */
 }
 
 li {
@@ -197,6 +198,7 @@ input {
 }
 
 .sidebar-6 {
+    position: relative;
     width: 50px;
     height: 50px;
     background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1284px 60px;
@@ -204,6 +206,27 @@ input {
 
 .sidebar-6:hover {
     background: url(http://static3.qianqian.com/web/static/i/t9iWM95Y.png)-1104px -60px;
+}
+
+.feedback {
+    width: 36px;
+    height: 38px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    left: -36px;
+    background-color: #f7f7f7;
+    background: url(http://static2.qianqian.com/web/static/i/2Jq76ojE.png) no-repeat;
+    display: none;
+    top: 8px;
+    display: none;
+}
+
+.feedback:hover {
+    background: url(http://static3.qianqian.com/web/static/i/oDFVDq66.png) no-repeat;
+}
+
+.sidebar-6:hover .feedback {
+    display: block;
 }
 
 
@@ -243,15 +266,137 @@ input {
     color: #afafaf;
     font-size: 12px;
     padding-left: 15px;
+    position: relative;
 }
 
 .search-icon {
     position: absolute;
     right: 16px;
+    top: 6px;
     width: 17px;
     height: 17px;
     background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -912px 0 no-repeat;
 }
+
+
+/* 下拉框 */
+
+.search-down {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    border: 1px solid #e8e8e8;
+    display: none;
+}
+
+.down-1 {
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.down-1 span {
+    width: 24px;
+    height: 44px;
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+    line-height: 21px;
+}
+
+.down-2 {
+    width: 398px;
+    height: 44px;
+    display: flex;
+}
+
+.down-2 span:first-child {
+    font-size: 12px;
+    color: #cccc;
+    margin: 0 0 0 10px;
+    line-height: 44px;
+}
+
+.down-3 {
+    width: 354px;
+    height: 44px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.down-3 img {
+    padding-left: 5px;
+}
+
+.down-3:hover {
+    background-color: #f7f7f7;
+}
+
+.down-4 {
+    margin-left: 10px;
+}
+
+.text-1 a {
+    color: #333;
+    font-size: 14px;
+}
+
+.text-2 a {
+    color: #999;
+    font-size: 12px;
+}
+
+.down-5 {
+    width: 11px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    background: url(http://static3.qianqian.com/web/static/i/eSsvKxFG.png) no-repeat;
+}
+
+.down-6 {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    background: url(http://static4.qianqian.com/web/static/i/RvmIHihZ.png);
+}
+
+.down-7 {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down-icon {
+    width: 50px;
+    height: 15px;
+}
+
+
+/* 下拉框hover */
+
+.search:hover .search-down {
+    display: block;
+}
+
+.down-5:hover {
+    width: 11px;
+    height: 14px;
+    background: url(http://static2.qianqian.com/web/static/i/2LZOyvKx.png);
+}
+
+.down-6:hover {
+    width: 15px;
+    height: 15px;
+    background: url(http://static2.qianqian.com/web/static/i/74Rztsxn.png);
+}
+
+
+/* 文字 */
 
 .nav-1 span {
     padding: 0 3px;
@@ -283,9 +428,197 @@ input {
     padding-top: 5px;
 }
 
+.photo {
+    position: relative;
+}
+
 .photo img {
     border-radius: 50%;
     margin-left: 35px;
+    cursor: pointer;
+}
+
+
+/* 头像下拉框 */
+
+.pull-down {
+    position: absolute;
+    width: 204px;
+    height: 310px;
+    border: 1px solid #d4d3d3;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #ccc;
+    z-index: 2;
+    left: -120px;
+    top: 45px;
+    display: none;
+    cursor: pointer;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 30px;
+    z-index: 5;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: -20px;
+    right: 18px;
+    color: #666;
+    display: block;
+}
+
+.pull-down p {
+    color: #e13228;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pull-down p:hover {
+    text-decoration: underline;
+}
+
+.pull-down-1 {
+    width: 174px;
+    height: 62px;
+    border: 1px solid #e7e7e7;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px 10px 10px;
+    padding: 0 10px;
+}
+
+.dynamic-1 a {
+    color: #999;
+    font-size: 12px;
+}
+
+.dynamic-2 a {
+    color: #333;
+    font-size: 14px;
+}
+
+.dynamic:hover {
+    text-decoration: underlline;
+}
+
+
+/* hover */
+
+.message:hover {
+    background-color: #e4e4e4;
+}
+
+.pull-down-2 {
+    width: 205px;
+    height: 203px;
+}
+
+
+/* 消息 */
+
+.message {
+    width: 204px;
+    height: 33px;
+    position: relative;
+    padding-left: 10px;
+    line-height: 33px;
+}
+
+.message-1 {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -4px;
+    background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -972px -48px no-repeat;
+}
+
+.message-2 {
+    color: #333;
+    font-size: 12px;
+}
+
+.message-3 {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #E13228;
+    top: 7px;
+    right: 107px;
+    border-radius: 50%;
+}
+
+
+/* 歌单 */
+
+.list {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -4px;
+    background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -802px -72px no-repeat;
+}
+
+
+/* 购买 */
+
+.shop {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -4px;
+    background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -672px 0px no-repeat;
+}
+
+
+/* 账号 */
+
+.account {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -4px;
+    background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -852px -24px no-repeat;
+}
+
+
+/* 分享 */
+
+.share {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -4px;
+    background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -744px -144px no-repeat;
+}
+
+
+/* 推出 */
+
+.exit {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -4px;
+    background: url(http://static1.qianqian.com/web/static/i/EYrPXVvf.png) -672px -132px no-repeat;
+}
+
+
+/* hover后 */
+
+.photo:hover .pull-down {
+    display: block;
 }
 
 
@@ -358,6 +691,11 @@ input {
     position: relative;
 }
 
+.listen a {
+    color: #000;
+    font-size: 14px;
+}
+
 .listen .listen-1 {
     position: absolute;
     left: -32px;
@@ -368,6 +706,11 @@ input {
 
 .music-box {
     position: relative;
+}
+
+.music-box a {
+    color: #000;
+    font-size: 14px;
 }
 
 .music-box-1 {
@@ -699,7 +1042,6 @@ input {
 .song-list-4 .song-list-45 a {
     color: #aaaaaa;
     position: relative;
-    left: 41px;
 }
 
 
