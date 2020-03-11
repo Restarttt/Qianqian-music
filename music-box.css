@@ -142,12 +142,12 @@ input {
 
 .main-left {
     width: 250px;
-    height: 321.6px
+    height: 561.6px
 }
 
 .menu {
     width: 230px;
-    height: 321px;
+    height: 561.6px;
     overflow-y: auto;
 }
 
@@ -380,8 +380,232 @@ input {
 
 .main-middle {
     width: 1000px;
-    height: 321.6px;
-    background-color: antiquewhite;
+    height: 561.6px;
+    /* background-color: antiquewhite; */
+}
+
+
+/* 第一行类型 */
+
+.type {
+    width: 1000px;
+    height: 41px;
+    display: flex;
+}
+
+.type span {
+    display: block;
+    color: #a7a7a7;
+    font-size: 12px;
+    line-height: 41px;
+    font-weight: 600;
+    width: 98px;
+}
+
+.type-song {
+    width: 98px;
+}
+
+.type-song-1 {
+    width: 90px;
+    position: absolute;
+    top: -1px;
+    background-color: #fff;
+    z-index: 2;
+    display: none;
+    left: -16px;
+}
+
+.type-song-2 {
+    width: 90px;
+    height: 40.8px;
+    height: 41px;
+    padding-left: 15px;
+    border: 1px solid #e8e8e8;
+}
+
+.type-song-3 {
+    height: 54px;
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+}
+
+.type-song-3 p {
+    color: #999;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+
+
+/* 歌曲 */
+
+.type-1 {
+    position: relative;
+    width: 300px;
+    height: 41px;
+    margin-left: 80px;
+}
+
+.type-2 {
+    width: 300px;
+    height: 41px;
+    position: relative;
+}
+
+.type-3 {
+    width: 300px;
+    height: 41px;
+    position: relative;
+}
+
+
+/* hover */
+
+.type-song:hover .type-song-1 {
+    display: block;
+}
+
+
+/* 第二部分 歌曲信息*/
+
+.song-list {
+    width: 1000px;
+    height: 323px;
+    border: 2px solid #e8e8e8;
+    border-left: 0;
+    border-right: 0;
+    overflow-y: auto;
+}
+
+
+/* 第一行 */
+
+.list-0 {
+    width: 1000px;
+    height: 90px;
+    background-color: #f0f4f8;
+}
+
+.list-1 {
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    border-top: 1px solid #e8e8e8;
+}
+
+.list-song {
+    width: 286px;
+    height: 50px;
+    margin-left: 45px;
+    line-height: 50px;
+}
+
+.list-song-1 em {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 12px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-24px -1152px no-repeat;
+}
+
+.list-song-1 i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(http://static2.qianqian.com/play/player/t/i/qYBLNgqS.png) no-repeat;
+}
+
+.list-song span {
+    color: #000;
+    font-size: 14px;
+}
+
+
+/* 歌手 */
+
+.list-singer {
+    width: 286px;
+    height: 50px;
+    margin-left: 50px;
+    line-height: 50px;
+}
+
+.list-singer span {
+    color: #333;
+    font-size: 14px;
+}
+
+
+/* 专辑 */
+
+.list-album {
+    width: 148px;
+    height: 50px;
+    margin-left: 15px;
+    line-height: 50px;
+}
+
+.list-album span {
+    color: #333;
+    font-size: 14px;
+}
+
+
+/* 爱心 */
+
+.heart {
+    width: 118px;
+    height: 50px;
+    line-height: 56px;
+    margin-left: 65px;
+}
+
+.heart i {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -288px -1188px;
+}
+
+
+/* 相似歌曲 */
+
+.list-song-2 {
+    display: flex;
+    width: 220px;
+    position: relative;
+    left: 75px;
+    margin-top: 7px;
+}
+
+.list-song-3 {
+    background-color: #e13228;
+    margin-right: 10px;
+    border-radius: 5px;
+    line-height: 22px;
+    padding: 0px 6px;
+}
+
+.similarity {
+    width: 17px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -120px -1200px;
+}
+
+.list-song-3 span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.cover-version {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -396px -1128px;
 }
 
 
@@ -389,8 +613,7 @@ input {
 
 .main-right {
     width: 300px;
-    height: 449.6px;
-    overflow-y: auto;
+    height: 569.1px;
     margin-left: 30px;
 }
 
@@ -423,7 +646,10 @@ input {
 /* 歌词 */
 
 .lyric {
+    width: 242px;
+    height: 318.6px;
     margin-top: 20px;
+    overflow-y: auto;
 }
 
 .main-right .lyric-1 {
@@ -444,4 +670,69 @@ input {
 
 .lyric-3 {
     margin-bottom: 20px;
+}
+
+
+/* 点击框 */
+
+.lyric-error {
+    width: 250px;
+    height: 30px;
+    display: flex;
+    margin-top: 15px;
+    line-height: 17px;
+}
+
+.lyric-error span a {
+    font-size: 12px;
+    color: #999;
+}
+
+
+/* 直播*/
+
+.live-streaming {
+    width: 58px;
+    height: 22px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.live-streaming i {
+    width: 22px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    vertical-align: -1px;
+    background: url(http://static3.qianqian.com/play/player/t/i/mvobmqif.png)-288px -24px no-repeat;
+}
+
+
+/* 下载*/
+
+.download-lyric {
+    width: 60px;
+    height: 22px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/* 信息 */
+
+.lyric-information {
+    width: 84px;
+    height: 22px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
 }
