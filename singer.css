@@ -455,7 +455,8 @@ input {
     cursor: pointer;
 }
 
-.triangle {
+
+/* .triangle {
     width: 0;
     height: 0;
     position: absolute;
@@ -469,6 +470,19 @@ input {
     right: 18px;
     color: #666;
     display: block;
+} */
+
+.triangle {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #d4d3d3;
+    position: absolute;
+    top: -5px;
+    right: 19px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .pull-down p {
