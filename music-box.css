@@ -90,7 +90,7 @@ input {
 
 
 /* .personal {
-    height: 26.8px;
+height: 26.8px;
 } */
 
 .nav-right span {
@@ -132,7 +132,7 @@ input {
 
 .main {
     width: 100%;
-    height: 321.6px;
+    height: 604.6px;
     display: flex;
     padding-top: 20px;
 }
@@ -441,19 +441,19 @@ input {
 
 .type-1 {
     position: relative;
-    width: 300px;
+    width: 260px;
     height: 41px;
     margin-left: 80px;
 }
 
 .type-2 {
-    width: 300px;
+    width: 260px;
     height: 41px;
     position: relative;
 }
 
 .type-3 {
-    width: 300px;
+    width: 260px;
     height: 41px;
     position: relative;
 }
@@ -469,8 +469,8 @@ input {
 /* 第二部分 歌曲信息*/
 
 .song-list {
-    width: 1000px;
-    height: 323px;
+    width: 100%;
+    height: 493px;
     border: 2px solid #e8e8e8;
     border-left: 0;
     border-right: 0;
@@ -491,13 +491,19 @@ input {
     height: 50px;
     display: flex;
     border-top: 1px solid #e8e8e8;
+    position: relative;
 }
 
 .list-song {
-    width: 286px;
+    width: 265px;
     height: 50px;
     margin-left: 45px;
     line-height: 50px;
+}
+
+.list-song-1 {
+    width: 265px;
+    height: 50px;
 }
 
 .list-song-1 em {
@@ -525,9 +531,9 @@ input {
 /* 歌手 */
 
 .list-singer {
-    width: 286px;
+    width: 255px;
     height: 50px;
-    margin-left: 50px;
+    margin-left: 28px;
     line-height: 50px;
 }
 
@@ -536,13 +542,17 @@ input {
     font-size: 14px;
 }
 
+.list-singer span:hover {
+    text-decoration: underline;
+}
+
 
 /* 专辑 */
 
 .list-album {
-    width: 148px;
+    width: 150px;
     height: 50px;
-    margin-left: 15px;
+    /* margin-left: -7px; */
     line-height: 50px;
 }
 
@@ -551,11 +561,15 @@ input {
     font-size: 14px;
 }
 
+.list-album span:hover {
+    text-decoration: underline;
+}
+
 
 /* 爱心 */
 
 .heart {
-    width: 118px;
+    width: 42px;
     height: 50px;
     line-height: 56px;
     margin-left: 65px;
@@ -606,6 +620,219 @@ input {
     display: inline-block;
     vertical-align: middle;
     background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -396px -1128px;
+}
+
+
+/* 隐藏按钮 */
+
+.conceal {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    display: none;
+}
+
+.conceal-1 {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0 3px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -72px -1152px no-repeat;
+}
+
+.conceal-1:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-576px -48px no-repeat;
+}
+
+.conceal-2 {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0 3px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -96px -1128px no-repeat;
+}
+
+.conceal-2:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -552px -24px no-repeat;
+}
+
+.conceal-3 {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0 3px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -324px -1116px no-repeat;
+}
+
+.conceal-3:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -576px 0px no-repeat;
+}
+
+.conceal-4 {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0 3px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -288px -1140px no-repeat;
+}
+
+.conceal-4:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -504px -24px no-repeat;
+}
+
+
+/* hover上的效果 */
+
+.list-1:hover {
+    background-color: #f0f4f8;
+}
+
+.list-1:hover .conceal {
+    display: block;
+}
+
+
+/* 选择按钮 */
+
+.select {
+    width: 100%;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.select em {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 12px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-24px -1152px no-repeat;
+}
+
+.select span {
+    color: #333;
+    font-size: 12px;
+}
+
+.select-1 {
+    display: flex;
+    align-items: center;
+}
+
+.select .select-1 span {
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+
+/* 喜欢 */
+
+.like {
+    background-color: #f7f7f7;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 8px 0 20px;
+}
+
+.like i {
+    display: inline-block;
+    width: 20px;
+    height: 21.2px;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -96px -1152px no-repeat;
+}
+
+
+/* 歌单 */
+
+.add-list {
+    background-color: #f7f7f7;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 8px 0 20px;
+}
+
+.add-list i {
+    display: inline-block;
+    width: 20px;
+    height: 21.2px;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -144px -1152px no-repeat;
+}
+
+
+/* 下载 */
+
+.empty {
+    background-color: #f7f7f7;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 8px 0 20px;
+}
+
+.empty i {
+    display: inline-block;
+    width: 20px;
+    height: 21.2px;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -444px -1128px no-repeat;
+}
+
+.select .select-1 .empty span {
+    color: #666;
+    padding: 0;
+    margin: 0;
+}
+
+.empty:hover {
+    background-color: #eaeaea;
+}
+
+.select .select-1 .sum {
+    margin-left: 100px;
+    color: #333;
+    font-size: 14px;
+    float: right;
+}
+
+
+/* 删除 */
+
+.batch {
+    background-color: #f7f7f7;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 8px 0 20px;
+}
+
+.batch i {
+    display: inline-block;
+    width: 20px;
+    height: 21.2px;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -456px -1104px no-repeat;
+}
+
+
+/* 清空 */
+
+.delete {
+    background-color: #f7f7f7;
+    padding: 3px 8px;
+    border-radius: 3px 8px;
+    border-radius: 3px;
+    margin: 0 8px 0 20px;
+}
+
+.delete i {
+    display: inline-block;
+    width: 20px;
+    height: 21.2px;
+    vertical-align: middle;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) -264px -1140px no-repeat;
 }
 
 
@@ -735,4 +962,305 @@ input {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+}
+
+
+/* 播放器 */
+
+.player {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #000;
+    align-items: center;
+}
+
+.play-button {
+    width: 146px;
+    height: 45px;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.button-1 {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -456px -1152px;
+}
+
+.button-2 {
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    margin: 0 15px;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -72px -1080px;
+}
+
+.button-3 {
+    width: 22px;
+    height: 24px;
+    cursor: pointer;
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png) no-repeat -469px -1128px;
+}
+
+
+/* 时间 */
+
+.time {
+    width: 833px;
+    height: 65px;
+}
+
+.time-top {
+    width: 833px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.text-left span {
+    color: #fff;
+}
+
+.text-left span a {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icon-right ul {
+    display: flex;
+}
+
+.icon-right ul li {
+    margin: 0 4px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.icon-right-1 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-360px -1176px no-repeat;
+}
+
+.icon-right-1:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-420px -192px no-repeat;
+}
+
+.icon-right-2 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-216px -1152px no-repeat;
+}
+
+.icon-right-2:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-168px -1116px no-repeat;
+}
+
+.icon-right-3 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-96px -1176px no-repeat;
+}
+
+.icon-right-3:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-24px -1176px no-repeat;
+}
+
+.icon-right-4 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-0px -1176px no-repeat;
+}
+
+.icon-right-4:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-252px -1080px no-repeat;
+}
+
+.icon-right-5 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-408px -1176px no-repeat;
+}
+
+.icon-right-5:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-420px -1128px no-repeat;
+}
+
+.icon-right-6 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-372px -1128px no-repeat;
+}
+
+.icon-right-6:hover {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-480px -1080px no-repeat;
+}
+
+
+/* 时间条 */
+
+.time-bottom {
+    width: 876px;
+    height: 25px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.time-bar {
+    width: 749px;
+    height: 12px;
+    /* display: inline-block; */
+}
+
+.time-bar-1 {
+    width: 749px;
+    height: 2px;
+    background-color: #afafaf;
+}
+
+.time-bar-2 {
+    width: 269.64px;
+    height: 2px;
+    background-color: #d2d2d2;
+    z-index: 2;
+}
+
+.time-bar-3 {
+    width: 237px;
+    height: 2px;
+    background-color: #e13228;
+    position: relative;
+}
+
+.red-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: url(https://static3.qianqian.com/play/player/t/i/mVsJYq6D.png) no-repeat;
+    right: -6px;
+    top: -4px;
+}
+
+.timing {
+    position: relative;
+    top: -8px;
+}
+
+.timing span {
+    font-size: 10px;
+    color: #fff;
+    margin-left: 15px;
+    line-height: 20px;
+}
+
+
+/* 音量 */
+
+.volume {
+    width: 200px;
+    height: 54px;
+    margin: 0 10px 0 40px;
+    line-height: 54px;
+}
+
+.volume span {
+    margin: 0 6px;
+}
+
+.volume a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.volume-1 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-360px -1152px no-repeat;
+}
+
+.volume-2 {
+    background: url(https://static0.qianqian.com/play/player/t/i/GF9N0Yq3.png)-264px -1164px no-repeat;
+}
+
+.red-volume {
+    width: 86px;
+    height: 3px;
+    background-color: #e13228;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.red-dot-1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: url(https://static3.qianqian.com/play/player/t/i/mVsJYq6D.png) no-repeat;
+    right: -6px;
+    top: -4px;
+}
+
+.quality {
+    /* line-height: 54px; */
+    display: flex;
+    align-items: center;
+}
+
+.quality-1 {
+    /* width: 100px; */
+    height: 30px;
+    padding: 3px 10px;
+    margin-right: 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    line-height: 20px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.quality span {
+    color: #f5f6f6;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.diamond {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://static3.qianqian.com/play/player/t/i/EEVyJ7uv.png)-440px -60px no-repeat;
+}
+
+.roll {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://static2.qianqian.com/play/player/t/i/lTaMQFKp.png)-216px -180px no-repeat;
+}
+
+.quality-2 {
+    /* width: 100px; */
+    height: 30px;
+    padding: 3px 10px;
+    margin-right: 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    line-height: 20px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+
+/* :hover */
+
+.quality-1:hover {
+    background-color: #e13228;
+    border: 1px solid #e13228;
+}
+
+.quality-2:hover {
+    background-color: #f5f6f6;
+    border-color: #f5f6f6;
+}
+
+.quality-2:hover span {
+    color: #5b9ce8;
 }
