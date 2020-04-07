@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- 第一部分导航栏 -->
     <div class="nav">
         <div class="nav-left">
             <nav class="logo">
@@ -17,6 +18,11 @@
             <div class="input">
                 <input type="text" value="输入歌曲、歌手、专辑名">
                 <i></i>
+                <!-- 下拉框 -->
+                <div class="input-pull">
+
+
+                </div>
             </div>
 
             <div class="keyword">
@@ -631,8 +637,18 @@
             </div>
             
         </div>
-
-
+<!-- js代码 -->
+        <script src="./js/jquery-3.3.1/jquery-3.3.1.js "></script>
+        <script>
+            $('input').click(function() {
+                $('.input-pull').show()
+                console.log(2);
+                return false;
+            })
+            $('body').click(function() {
+                $('.input-pull').hide()
+                console.log(3);
+            })
+        </script>
 </body>
-
 </html>

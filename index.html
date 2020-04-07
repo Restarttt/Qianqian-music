@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="filter: grayscale(1);">
 
 <head>
     <meta charset="UTF-8">
@@ -86,9 +86,8 @@
                             </ul>
                         </div>
 
-
                     </div>
-                    <!-- 歌手 -->
+                    <!-- 歌手
                     <div class="search-down-2">
 
                         <div class="singer">
@@ -113,7 +112,7 @@
 
                         </div>
                     </div>
-                    <!-- 专辑 -->
+                    专辑 
                     <div class="search-down-3">
 
                         <div class="alubm">
@@ -122,7 +121,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -139,7 +138,6 @@
 
                 <span>Restart阿</span>
             </div>
-
         </div>
     </div>
     <!-- 第二部分 顶导航 -->
@@ -157,7 +155,6 @@
         </div>
 
     </div>
-
     <!-- 第三部分内容 -->
     <div class="main">
         <div class="main-1">
@@ -1540,11 +1537,18 @@
         </div>
 
     </div>
+    <!-- js代码部分 -->
+    <script src="./js/jquery-3.3.1/jquery-3.3.1.js "></script>
+    <script>
+        $('input').click(function() {
+            $('.search-down').show()
+            return false;
+        })
 
-
-
-
-
+        $('body').click(function() {
+            $('.search-down').hide()
+        })
+    </script>
 </body>
 
 </html>
